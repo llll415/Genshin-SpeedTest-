@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>speedtest-app</artifactId>
-    <version>1.1</version>
+    <artifactId>genshin_speedtest</artifactId>
+    <version>v1.2</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -16,21 +16,16 @@
     </properties>
 
     <dependencies>
-        <!-- JavaFX 核心控制组件 -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-
-        <!-- 新增的依赖：用于在非GUI环境下初始化JavaFX工具包 -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-swing</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-
-        <!-- 用于解析IP地址API返回的JSON数据 -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -39,6 +34,8 @@
     </dependencies>
 
     <build>
+        <!-- 新增: 定义最终生成的文件名 -->
+        <finalName>${project.artifactId}_${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -62,6 +59,8 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <!-- 修改: 禁用assembly插件自动添加的后缀 -->
+                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
                 <executions>
                     <execution>
