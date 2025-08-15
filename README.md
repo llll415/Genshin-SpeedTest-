@@ -51,8 +51,8 @@
     ```
 
 ## ⭐ 致谢
-[免费IP归属地查询API:https://www.ip9.com.cn](https://www.ip9.com.cn)
-原神/绝区零 提供下载包
+* **[免费IP归属地查询API:https://www.ip9.com.cn](https://www.ip9.com.cn)**
+* **原神/绝区零 提供下载包**
 ## 📄 许可证
 
 本项目基于 [MIT License](LICENSE) 授权
