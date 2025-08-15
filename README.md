@@ -45,11 +45,14 @@
 4.  **运行程序**
     命令成功执行后，您会在 `target` 文件夹内找到一个 JAR 文件 (例如 `SpeedTestApp-1.0.0.jar`)
 
-    通过以下命令即可启动应用程序：
+    通过以下命令即可启动应用程序(图形化模式)：
     ```bash
-    java -jar target/SpeedTestApp-1.0.0.jar
+    java -jar SpeedTestApp-1.0.0.jar
     ```
-
+    命令行交互模式 添加 --cli
+    ```bash
+    java -jar SpeedTestApp-1.0.0.jar --cli
+    ```
 ## ⭐ 致谢
 * **[免费IP归属地查询API:https://www.ip9.com.cn](https://www.ip9.com.cn)**
 * **原神/绝区零 提供下载包**
