@@ -82,10 +82,17 @@ public class SpeedTestApp extends Application {
         Label driverLabel = new Label("下载测试由米哈游强力驱动bushi(");
         driverLabel.setTextAlignment(TextAlignment.CENTER);
 
+        Hyperlink repoLink = new Hyperlink("https://github.com/llll415/Genshin-SpeedTest-");
+        repoLink.setOnAction(e -> getHostServices().showDocument("https://github.com/llll415/Genshin-SpeedTest-"));
+        HBox repoBox = new HBox(new Label("仓库: "), repoLink);
+        repoBox.setAlignment(Pos.CENTER);
+
+
         styleControls();
         disclaimerLabel.setStyle("-fx-font-size: 11px; -fx-text-fill: #858796;");
         apiBox.setStyle("-fx-font-size: 11px;");
         driverLabel.setStyle("-fx-font-size: 11px; -fx-text-fill: #858796;");
+        repoBox.setStyle("-fx-font-size: 11px;");
 
         VBox root = new VBox(8);
         root.setAlignment(Pos.CENTER);
@@ -95,7 +102,7 @@ public class SpeedTestApp extends Application {
         VBox controls = new VBox(10, configBox, startButton);
         controls.setAlignment(Pos.CENTER);
         
-        VBox footer = new VBox(4, proxyLabel, ipLabel, locationLabel, ispLabel, apiBox, driverLabel, disclaimerLabel);
+        VBox footer = new VBox(4, proxyLabel, ipLabel, locationLabel, ispLabel, apiBox, driverLabel, disclaimerLabel, repoBox);
         footer.setAlignment(Pos.CENTER);
         footer.setPadding(new Insets(8, 0, 0, 0));
 
