@@ -1,7 +1,7 @@
 import java.util.List;
 
 public enum ServerRegion {
-    CHINA("中国", "autopatchcn.yuanshen.com", List.of(
+    CHINA("中国大陆", "autopatchcn.yuanshen.com", List.of(
         "https://autopatchcn.yuanshen.com/client_app/download/pc_zip/20250314105313_OcRjEyGXX8Txtqm4/YuanShen_5.5.0.zip.001",
         "https://autopatchcn.juequling.com/package_download/op/client_app/download/20250701110943_jl75SMuF4iArnIDR/VolumeZip/juequling_2.1.0_AS.zip.001"
     )),
