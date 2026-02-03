@@ -35,7 +35,7 @@ public class CliRunner {
         System.out.println("欢迎使用原神测速工具命令行交互模式！");
 
         while (true) {
-            System.out.print("请选择服务器地区 (1: 中国, 2: 香港): ");
+            System.out.print("请选择服务器地区 (1: 中国大陆, 2: 中国香港): ");
             String choice = scanner.nextLine().trim();
             if ("1".equals(choice)) {
                 region = ServerRegion.CHINA;
